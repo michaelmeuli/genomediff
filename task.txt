@@ -1,0 +1,29 @@
+Ciao Michael,
+hope to find you well with this email 🙂
+
+I have a task for you if you have time for the ACOMa project.
+
+The task is to modify the .gd file (directory: /shares/sander.imm.uzh/MP/ACOMa/breseq/mab/$sample_id/data/annotated.gd) generated from breseq.
+
+The modification of the .gd file (please find "annotated.gd" as an example attached) that are needed are the following:
+
+Please remove all the lines that starts with # 
+Add a sample_id column at the beginning that is populated with a variable, in this case is V0009. But I would need to make the modification in different files that have this directory /shares/sander.imm.uzh/MP/ACOMa/breseq/mab/$sample_id/data/annotated.txt where sample_id is a variable.
+Consider the values as value separated by tab 
+Values that are separated by comma belong to the same column (please preserved the comma) 
+Some values are composed in this way: value1=value2. 
+What I would like to do is construct a header that will have value1 and as the header value and then value2 as the value found in the corresponding row.
+Note that not every row would have the same value1=value2 so different columns would need to be generated so no information is lost. As a consequence, for the row that value1 is not found there is gonna be an empty value in the corresponding row.
+For the values that do not have a value1=value2 format, please add a genal header called for example column 1 column2.
+
+My idea would be to generate from the .gd file a .txt file and then modify the .txt file. 
+When all the .gd file are modified in a .txt file, then I would like to combine them all into one single file and filter out the synonymous variant that are found.
+
+So far I have obtained this script ("modify_gd.py" please find it attached)  that is more or less working.
+
+Please let me know if you have time and willingness to work on it 🙂 
+
+You should be able to have access to all the .gd file in the directory that I have shared, please let me know if that is not the case so we can find a solution. Also, do not hesitate to ask me more questions if you have any doubts or you need some clarification. 
+
+All the best,
+Meg
