@@ -11,6 +11,7 @@ class GenomeDiff(object):
         self.evidence = []
         self.validation = []
         self._index = {}
+        self.sample_id = ''
 
     @classmethod
     def read(cls, fsock):

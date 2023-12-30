@@ -20,3 +20,6 @@ file_path = document.metadata['READSEQ']
 filename = os.path.basename(file_path)
 sample_id = filename.split('_')[0]
 print(sample_id)
+
+document.sample_id = filename.split('_')[0]
+print(document.sample_id)
