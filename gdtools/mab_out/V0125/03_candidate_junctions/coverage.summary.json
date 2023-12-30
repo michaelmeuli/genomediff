@@ -1,0 +1,26 @@
+{
+  "CU458745": {
+    "average": 0.0,
+    "deletion_coverage_propagation_cutoff": -1.0,
+    "deletion_coverage_seed_cutoff": 0.0,
+    "nbinom_mean_parameter": 0.0,
+    "nbinom_prob_parameter": 0.0,
+    "nbinom_relative_variance": 0.0,
+    "nbinom_size_parameter": 0.0,
+    "nbinom_variance": 0.0,
+    "relative_variance": 0.0,
+    "variance": 0.0
+  },
+  "CU458896": {
+    "average": 68.18193,
+    "deletion_coverage_propagation_cutoff": 31.0,
+    "deletion_coverage_seed_cutoff": 0.0,
+    "nbinom_mean_parameter": 68.78058,
+    "nbinom_prob_parameter": 0.574008415089934,
+    "nbinom_relative_variance": 1.74213473829181,
+    "nbinom_size_parameter": 92.67937,
+    "nbinom_variance": 119.825037737859,
+    "relative_variance": 2.104264,
+    "variance": 143.4728
+  }
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.38.1&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 261 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_33448.html">*</a></td><td align="center">CU458896</td><td align="right">2,623,978</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">77.5%
+</td><td align="center">62.8
+/&nbsp;24.4
+</td><td align="center">40</td><td align="center">intergenic&nbsp;(&#8209;223/&#8209;115)</td><td align="center"><i>MAB_2578c/MAB_2579</i></td><td align="left">Conserved hypothetical protein/Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_33449.html">*</a></td><td align="center">CU458896</td><td align="right">2,623,978</td><td align="right">2</td><td align="center">.</td><td align="center">G</td><td align="right">77.5%
+</td><td align="center">62.2
+/&nbsp;24.4
+</td><td align="center">40</td><td align="center">intergenic&nbsp;(&#8209;223/&#8209;115)</td><td align="center"><i>MAB_2578c/MAB_2579</i></td><td align="left">Conserved hypothetical protein/Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28890.html">*</a></td><td align="center">CU458896</td><td align="right">1,578,928</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">77.4%
+</td><td align="center">72.3
+/&nbsp;18.1
+</td><td align="center">54</td><td align="center"><font class="snp_type_synonymous">P247P</font>&nbsp;(CC<font class="mutation_in_codon">C</font>&rarr;CC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>MAB_1555</i></td><td align="left">Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_29562.html">*</a></td><td align="center">CU458896</td><td align="right">1,741,926</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">75.9%
+</td><td align="center">56.7
+/&nbsp;NA
+</td><td align="center">29</td><td align="center"><font class="snp_type_synonymous">G195G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>MAB_1712</i></td><td align="left">Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28889.html">*</a></td><td align="center">CU458896</td><td align="right">1,578,911</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">75.5%
+</td><td align="center">54.1
+/&nbsp;11.1
+</td><td align="center">53</td><td align="center"><font class="snp_type_nonsynonymous">T242A</font>&nbsp;(<font class="mutation_in_codon">A</font>CC&rarr;<font class="mutation_in_codon">G</font>CC)&nbsp;</td><td align="center"><i>MAB_1555</i></td><td align="left">Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_22850.html">*</a></td><td align="center">CU458896</td><td align="right">220,576</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">72.7%
+</td><td align="center">35.8
+/&nbsp;18.1
+</td><td align="center">44</td><td align="center"><font class="snp_type_synonymous">P306P</font>&nbsp;(CC<font class="mutation_in_codon">C</font>&rarr;CC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>MAB_0209</i></td><td align="left">Hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_22851.html">*</a></td><td align="center">CU458896</td><td align="right">220,579</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">72.7%
+</td><td align="center">26.5
+/&nbsp;14.3
+</td><td align="center">44</td><td align="center"><font class="snp_type_synonymous">Q307Q</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>MAB_0209</i></td><td align="left">Hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_29828.html">*</a></td><td align="center">CU458896</td><td align="right">1,836,775</td><td align="right">1</td><td align="center">.</td><td align="center">C</td><td align="right">70.9%
+</td><td align="center">79.3
+/&nbsp;52.1
+</td><td align="center">55</td><td align="center">intergenic&nbsp;(&#8209;234/&#8209;282)</td><td align="center"><i>MAB_1835c/MAB_1836</i></td><td align="left">Immunogenic protein MPT64 precursor/Arylsulfatase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_22810.html">*</a></td><td align="center">CU458896</td><td align="right">219,914</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">70.8%
+</td><td align="center">74.4
+/&nbsp;24.2
+</td><td align="center">72</td><td align="center"><font class="snp_type_nonsynonymous">L86F</font>&nbsp;(<font class="mutation_in_codon">C</font>TT&rarr;<font class="mutation_in_codon">T</font>TT)&nbsp;</td><td align="center"><i>MAB_0209</i></td><td align="left">Hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_38666.html">*</a></td><td align="center">CU458896</td><td align="right">3,451,854</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">70.6%
+</td><td align="center">36.5
+/&nbsp;13.4
+</td><td align="center">34</td><td align="center"><font class="snp_type_synonymous">S308S</font>&nbsp;(TC<font class="mutation_in_codon">G</font>&rarr;TC<font class="mutation_in_codon">C</font>)&nbsp;&Dagger;</td><td align="center"><i>MAB_3404c</i></td><td align="left">Probable ribonucleoside&#8209;diphosphate reductase beta subunit</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_38667.html">*</a></td><td align="center">CU458896</td><td align="right">3,451,855</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">70.6%
+</td><td align="center">37.5
+/&nbsp;13.6
+</td><td align="center">34</td><td align="center"><font class="snp_type_nonsynonymous">S308W</font>&nbsp;(T<font class="mutation_in_codon">C</font>G&rarr;T<font class="mutation_in_codon">G</font>G)&nbsp;&Dagger;</td><td align="center"><i>MAB_3404c</i></td><td align="left">Probable ribonucleoside&#8209;diphosphate reductase beta subunit</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_38668.html">*</a></td><td align="center">CU458896</td><td align="right">3,451,856</td><td align="right">0</td><td align="center">A</td><td align="center">T</td><td align="right">70.6%
+</td><td align="center">42.1
+/&nbsp;18.2
+</td><td align="center">34</td><td align="center"><font class="snp_type_nonsynonymous">S308T</font>&nbsp;(<font class="mutation_in_codon">T</font>CG&rarr;<font class="mutation_in_codon">A</font>CG)&nbsp;&Dagger;</td><td align="center"><i>MAB_3404c</i></td><td align="left">Probable ribonucleoside&#8209;diphosphate reductase beta subunit</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_38669.html">*</a></td><td align="center">CU458896</td><td align="right">3,451,857</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">70.6%
+</td><td align="center">39.1
+/&nbsp;13.9
+</td><td align="center">34</td><td align="center"><font class="snp_type_synonymous">S307S</font>&nbsp;(TC<font class="mutation_in_codon">G</font>&rarr;TC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>MAB_3404c</i></td><td align="left">Probable ribonucleoside&#8209;diphosphate reductase beta subunit</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28918.html">*</a></td><td align="center">CU458896</td><td align="right">1,579,301</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">68.4%
+</td><td align="center">104.9
+/&nbsp;96.3
+</td><td align="center">152</td><td align="center"><font class="snp_type_nonsynonymous">A372P</font>&nbsp;(<font class="mutation_in_codon">G</font>CG&rarr;<font class="mutation_in_codon">C</font>CG)&nbsp;</td><td align="center"><i>MAB_1555</i></td><td align="left">Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_30565.html">*</a></td><td align="center">CU458896</td><td align="right">1,944,347</td><td align="right">0</td><td align="center">G</td><td align="center">.</td><td align="right">68.4%
+</td><td align="center">22.3
+/&nbsp;18.8
+</td><td align="center">19</td><td align="center">coding&nbsp;(652/1719&nbsp;nt)</td><td align="center"><i>MAB_1945c</i></td><td align="left">Probable dihydrolipoamide succinyltransferase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28880.html">*</a></td><td align="center">CU458896</td><td align="right">1,578,877</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">68.2%
+</td><td align="center">42.8
+/&nbsp;30.4
+</td><td align="center">66</td><td align="center"><font class="snp_type_synonymous">A230A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>MAB_1555</i></td><td align="left">Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28917.html">*</a></td><td align="center">CU458896</td><td align="right">1,579,285</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">67.7%
+</td><td align="center">65.4
+/&nbsp;59.4
+</td><td align="center">133</td><td align="center"><font class="snp_type_synonymous">G366G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>MAB_1555</i></td><td align="left">Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_43057.html">*</a></td><td align="center">CU458896</td><td align="right">4,370,041</td><td align="right">1</td><td align="center">.</td><td align="center">T</td><td align="right">67.7%
+</td><td align="center">53.2
+/&nbsp;35.1
+</td><td align="center">34</td><td align="center">coding&nbsp;(2781/2931&nbsp;nt)</td><td align="center"><i>MAB_4293</i></td><td align="left">Putative Fe&#8209;S oxidoreductase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28919.html">*</a></td><td align="center">CU458896</td><td align="right">1,579,304</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">67.5%
+</td><td align="center">102.0
+/&nbsp;105.4
+</td><td align="center">154</td><td align="center"><font class="snp_type_nonsynonymous">L373M</font>&nbsp;(<font class="mutation_in_codon">C</font>TG&rarr;<font class="mutation_in_codon">A</font>TG)&nbsp;</td><td align="center"><i>MAB_1555</i></td><td align="left">Conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_22813.html">*</a></td><td align="center">CU458896</td><td align="right">219,977</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">66.7%
+</td><td align="center">55.4
+/&nbsp;27.1
+</td><td align="center">69</td><td align="center"><font class="snp_type_nonsynonymous">A107T</font>&nbsp;(<font class="mutation_in_codon">G</font>CG&rarr;<font class="mutation_in_codon">A</font>CG)&nbsp;</td><td align="center"><i>MAB_0209</i></td><td align="left">Hypothetical protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 141 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_45357.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45357.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">2669811&nbsp;=</td><td align="center" class="junction_gene">25 (0.490)</td><td rowspan="2" align="center">15 (0.300)<br>+AG</td>
+<td rowspan="2" align="center">13/286</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">34.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+34/&#8209;223)</td>
+<td align="center" class="junction_gene"><i>MAB_2629/MAB_2630</i></td>
+<td class="junction_gene">Conserved hypothetical protein/Probable integral membrane cytochrome D ubiquinol oxidase (Subunit I) CydA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45357.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;2669812</td>
+<td align="center" class="junction_gene">33 (0.650)</td><td align="center" class="junction_gene">intergenic&nbsp;(+35/&#8209;222)</td>
+<td align="center" class="junction_gene"><i>MAB_2629/MAB_2630</i></td>
+<td class="junction_gene">Conserved hypothetical protein/Probable integral membrane cytochrome D ubiquinol oxidase (Subunit I) CydA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_45396.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45396.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">3278118&nbsp;=</td><td align="center" class="junction_gene">15 (0.290)</td><td rowspan="2" align="center">18 (0.370)</td>
+<td rowspan="2" align="center">12/274</td>
+<td rowspan="2" align="center">3.5</td>
+<td rowspan="2" align="center">67.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(419/1377&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_3241c</i></td>
+<td class="junction_gene">Cell division protein FtsY homolog</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45396.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;3278123</td>
+<td align="center" class="junction_gene">3 (0.060)</td><td align="center" class="junction_gene">coding&nbsp;(414/1377&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_3241c</i></td>
+<td class="junction_gene">Cell division protein FtsY homolog</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_45401.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45401.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;3344697</td><td align="center" class="junction_gene">29 (0.570)</td><td rowspan="2" align="center">15 (0.290)</td>
+<td rowspan="2" align="center">12/290</td>
+<td rowspan="2" align="center">3.7</td>
+<td rowspan="2" align="center">34.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(394/783&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_3305c</i></td>
+<td class="junction_gene">Conserved hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45401.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">3344701&nbsp;=</td>
+<td align="center" class="junction_gene">29 (0.570)</td><td align="center" class="junction_gene">coding&nbsp;(390/783&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_3305c</i></td>
+<td class="junction_gene">Conserved hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_45331.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45331.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">2087497&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">17 (0.340)</td>
+<td rowspan="2" align="center">12/288</td>
+<td rowspan="2" align="center">3.7</td>
+<td rowspan="2" align="center">97.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;91/&#8209;20)</td>
+<td align="center" class="junction_gene"><i>MAB_2086c/MAB_2087</i></td>
+<td class="junction_gene">Truncated transposase&#8209;like protein IS1601&#8209;D/Transposase&#8209;like protein IS3/IS911</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45331.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;2631721</td>
+<td align="center" class="junction_gene">1 (0.020)</td><td align="center" class="junction_gene">intergenic&nbsp;(+31/&#8209;68)</td>
+<td align="center" class="junction_gene"><i>MAB_2586/MAB_2587</i></td>
+<td class="junction_gene">Putative transcription antitermination regulator/Conserved hypothetical protein (Copper resistance D precursor?)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_45435.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45435.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">4038904&nbsp;=</td><td align="center" class="junction_gene">30 (0.590)</td><td rowspan="2" align="center">6 (0.200)<br>+60 bp</td>
+<td rowspan="2" align="center">5/170</td>
+<td rowspan="2" align="center">3.8</td>
+<td rowspan="2" align="center">29.0%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1/921&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_3992c</i></td>
+<td class="junction_gene">Porphobilinogen deaminase (HemC)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45435.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;4038975</td>
+<td align="center" class="junction_gene">20 (0.390)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;71/+35)</td>
+<td align="center" class="junction_gene"><i>MAB_3992c/MAB_3993c</i></td>
+<td class="junction_gene">Porphobilinogen deaminase (HemC)/Glutamyl&#8209;tRNA reductase (HemA)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_45346.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45346.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">2493419&nbsp;=</td><td align="center" class="junction_gene">2 (0.040)</td><td rowspan="2" align="center">14 (0.290)</td>
+<td rowspan="2" align="center">11/278</td>
+<td rowspan="2" align="center">3.8</td>
+<td rowspan="2" align="center">87.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(895/1035&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_2436</i></td>
+<td class="junction_gene">Conserved hypothetical protein (fibronectin&#8209;attachment?)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45346.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;2493415</td>
+<td align="center" class="junction_gene">2 (0.040)</td><td align="center" class="junction_gene">coding&nbsp;(891/1035&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_2436</i></td>
+<td class="junction_gene">Conserved hypothetical protein (fibronectin&#8209;attachment?)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_45213.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45213.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">109777&nbsp;=</td><td align="center" class="junction_gene">7 (0.140)</td><td rowspan="2" align="center">9 (0.180)<br>+TG</td>
+<td rowspan="2" align="center">8/286</td>
+<td rowspan="2" align="center">5.0</td>
+<td rowspan="2" align="center">62.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(251/606&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_0108c</i></td>
+<td class="junction_gene">Hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45213.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;109807</td>
+<td align="center" class="junction_gene">4 (0.080)</td><td align="center" class="junction_gene">coding&nbsp;(221/606&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_0108c</i></td>
+<td class="junction_gene">Hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_45239.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45239.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;601833</td><td align="center" class="junction_gene">43 (0.840)</td><td rowspan="2" align="center">6 (0.130)</td>
+<td rowspan="2" align="center">6/272</td>
+<td rowspan="2" align="center">5.6</td>
+<td rowspan="2" align="center">11.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(907/1149&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_0600</i></td>
+<td class="junction_gene">Probable acetyl&#8209;CoA acetyltransferase FadA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45239.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;601885</td>
+<td align="center" class="junction_gene">50 (1.040)</td><td align="center" class="junction_gene">coding&nbsp;(959/1149&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_0600</i></td>
+<td class="junction_gene">Probable acetyl&#8209;CoA acetyltransferase FadA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_45232.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45232.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;511319</td><td align="center" class="junction_gene">35 (0.690)</td><td rowspan="2" align="center">6 (0.120)</td>
+<td rowspan="2" align="center">6/274</td>
+<td rowspan="2" align="center">5.7</td>
+<td rowspan="2" align="center">14.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(529/4029&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_0510c</i></td>
+<td class="junction_gene">Probable non&#8209;ribosomal peptide synthase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45232.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;511347</td>
+<td align="center" class="junction_gene">36 (0.750)</td><td align="center" class="junction_gene">coding&nbsp;(501/4029&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_0510c</i></td>
+<td class="junction_gene">Probable non&#8209;ribosomal peptide synthase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_45348.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45348.html">?</a></td>
+<td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;2518290</td><td align="center" class="junction_gene">63 (1.230)</td><td rowspan="2" align="center">5 (0.100)</td>
+<td rowspan="2" align="center">5/278</td>
+<td rowspan="2" align="center">6.2</td>
+<td rowspan="2" align="center">8.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(733/825&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_2463</i></td>
+<td class="junction_gene">Putative sulfonate ABC transporter, permease</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45348.html">?</a></td><td rowspan="1" class="junction_gene">CU458896</td>
+<td align="center" class="junction_gene">=&nbsp;2518332</td>
+<td align="center" class="junction_gene">52 (1.060)</td><td align="center" class="junction_gene">coding&nbsp;(775/825&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>MAB_2463</i></td>
+<td class="junction_gene">Putative sulfonate ABC transporter, permease</td>
+</tr>
+</table>
+</body></html>

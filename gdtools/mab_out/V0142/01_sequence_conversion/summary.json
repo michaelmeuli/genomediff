@@ -1,0 +1,51 @@
+{
+  "max_qual": 40,
+  "num_bases": 302271627,
+  "num_original_bases": 303536803,
+  "num_original_reads": 2087178,
+  "num_reads": 2078799,
+  "read_length_avg": 145.406860351562,
+  "read_length_max": 151,
+  "read_length_min": 100,
+  "reads": {
+    "V0142_R1_trim_paired": {
+      "converted_fastq_name": "/scratch/mpanza/breseq/mab/V0142/01_sequence_conversion/V0142_R1_trim_paired.converted.fastq",
+      "max_quality_score": 40,
+      "min_quality_score": 2,
+      "num_bases": 151644038,
+      "num_filtered_coverage_limit_reads": 0,
+      "num_filtered_same_base_reads": 72,
+      "num_filtered_too_many_N_reads": 0,
+      "num_filtered_too_short_reads": 0,
+      "num_original_bases": 151654906,
+      "num_original_reads": 1043589,
+      "num_reads": 1043517,
+      "quality_format": "SANGER",
+      "quality_format_original": "SANGER",
+      "read_length_avg": 145.320141406417,
+      "read_length_max": 151,
+      "read_length_min": 100,
+      "reads_were_split": false
+    },
+    "V0142_R2_trim_paired": {
+      "converted_fastq_name": "/scratch/mpanza/breseq/mab/V0142/01_sequence_conversion/V0142_R2_trim_paired.converted.fastq",
+      "max_quality_score": 40,
+      "min_quality_score": 2,
+      "num_bases": 150627589,
+      "num_filtered_coverage_limit_reads": 0,
+      "num_filtered_same_base_reads": 8307,
+      "num_filtered_too_many_N_reads": 0,
+      "num_filtered_too_short_reads": 0,
+      "num_original_bases": 151881897,
+      "num_original_reads": 1043589,
+      "num_reads": 1035282,
+      "quality_format": "SANGER",
+      "quality_format_original": "SANGER",
+      "read_length_avg": 145.494260501004,
+      "read_length_max": 151,
+      "read_length_min": 100,
+      "reads_were_split": false
+    }
+  },
+  "total_reference_sequence_length": 5090491
+}

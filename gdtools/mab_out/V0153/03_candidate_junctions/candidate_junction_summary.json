@@ -1,0 +1,14 @@
+{
+  "accepted_length": 218127,
+  "accepted_number": 710,
+  "accepted_pos_hash_score_cutoff": 2,
+  "passed_alignment_pairs_considered": 2666,
+  "pos_hash_score_distribution": {
+    "2": 707,
+    "3": 1,
+    "7": 1,
+    "9": 1
+  },
+  "total_length": 218127,
+  "total_number": 710
+}

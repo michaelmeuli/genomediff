@@ -1,0 +1,26 @@
+{
+  "accepted_length": 59718,
+  "accepted_number": 193,
+  "accepted_pos_hash_score_cutoff": 3,
+  "passed_alignment_pairs_considered": 20619,
+  "pos_hash_score_distribution": {
+    "15": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "2": 5296,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "25": 1,
+    "3": 126,
+    "4": 51,
+    "45": 1,
+    "5": 1,
+    "6": 2,
+    "8": 3,
+    "9": 1
+  },
+  "total_length": 1687621,
+  "total_number": 5489
+}

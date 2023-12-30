@@ -1,0 +1,8 @@
+Tue Dec  5 15:53:41 2023
+
+/usr/local/bin/breseq -r /home/mpanza/data/mab/ref/mabgenomic.gbk -o /shares/sander.imm.uzh/MP/ACOMa/breseq/mab/V0010 /shares/sander.imm.uzh/MP/ACOMa/raw_data/breseq_mab/V0010_R1_trim_paired.fastq.gz /shares/sander.imm.uzh/MP/ACOMa/raw_data/breseq_mab/V0010_R2_trim_paired.fastq.gz
+
+Tue Dec  5 16:01:04 2023
+
+/usr/local/bin/breseq -r /home/mpanza/data/mab/ref/mabgenomic.gbk -o /shares/sander.imm.uzh/MP/ACOMa/breseq/mab/V0010 /shares/sander.imm.uzh/MP/ACOMa/de_novo_assemblies/V0010/V0010_R1_trim_paired.fastq.gz /shares/sander.imm.uzh/MP/ACOMa/de_novo_assemblies/V0010/V0010_R2_trim_paired.fastq.gz
+

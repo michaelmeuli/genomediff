@@ -1,0 +1,5 @@
+python3 ./breseq_parser_gdtools.py -d ./mab -o ./out -f breseq_parse
+
+python3 /home/michael/tmp/gdtools/breseq_parser_gdtools.py -d /home/michael/tmp/gdtools/mab -o /home/michael/tmp/gdtools/out -f breseq_parse
+
+CU458896 CU458745

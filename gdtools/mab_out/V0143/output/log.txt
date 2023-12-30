@@ -1,0 +1,4 @@
+Tue Nov  7 13:07:39 2023
+
+/usr/local/bin/breseq -r /home/mpanza/data/mab/ref/mabgenomic.gbk -o /scratch/mpanza/breseq/mab/V0143 /home/mpanza/data/mab/fastq/mab/mab_unzipped/V0143_R1_trim_paired.fastq /home/mpanza/data/mab/fastq/mab/mab_unzipped/V0143_R2_trim_paired.fastq
+
