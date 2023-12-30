@@ -3,3 +3,6 @@ python3 ./breseq_parser_gdtools.py -d ./mab -o ./out -f breseq_parse
 python3 /home/michael/tmp/gdtools/breseq_parser_gdtools.py -d /home/michael/tmp/gdtools/mab -o /home/michael/tmp/gdtools/out -f breseq_parse
 
 CU458896 CU458745
+
+worked with truncated imput and modified reference.fasta (to include CU458745), producing breseq_parse.csv:
+python3 /home/michael/tmp/gdtools/breseq_parser_gdtools_v1.py -d /home/michael/tmp/gdtools/mab -o /home/michael/tmp/gdtools/out -f breseq_parse
